@@ -27,8 +27,8 @@ struct GuideImmersiveView: View {
             var lastCommandTime: Date? = nil
 
             subscriptions.append(content.subscribe(to: SceneEvents.Update.self, on: nil, { event in
-                // 检查距离上次发送指令是否已经过去3秒
-                if let lastTime = lastCommandTime, Date().timeIntervalSince(lastTime) < 3 {
+                // 检查距离上次发送指令是否已经过去2秒
+                if let lastTime = lastCommandTime, Date().timeIntervalSince(lastTime) < 2 {
                     return
                 }
                 
@@ -71,7 +71,7 @@ struct GuideImmersiveView: View {
                             let leftUpScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftUpGesture)
 //                            print("Left hand 👆 score: \(leftUpScore)")
 
-                            if leftUpScore > 0.9 {
+                            if leftUpScore > 0.85 {
                                 print("Move forward")
                                 NotificationCenter.default.post(name: .moveForwardGesture, object: nil)
                                 lastCommandTime = Date() // 更新发送指令的时间
@@ -83,7 +83,7 @@ struct GuideImmersiveView: View {
                             let leftOpenHandScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftOpenHandGesture)
 //                            print("Left hand ✋ score: \(leftOpenHandScore)")
 
-                            if leftOpenHandScore > 0.9 {
+                            if leftOpenHandScore > 0.85 {
                                 print("Move backward")
                                 NotificationCenter.default.post(name: .moveBackwardGesture, object: nil)
                                 lastCommandTime = Date()
@@ -95,7 +95,7 @@ struct GuideImmersiveView: View {
                             let leftPeaceScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftPeaceGesture)
 //                            print("Left hand ✌️ score: \(leftPeaceScore)")
 
-                            if leftPeaceScore > 0.9 {
+                            if leftPeaceScore > 0.83 {
                                 print("Flip")
                                 NotificationCenter.default.post(name: .flipGesture, object: nil)
                                 lastCommandTime = Date()
@@ -178,7 +178,7 @@ struct GuideImmersiveView: View {
 #endif
     }
 }
-
-#Preview {
-    GuideImmersiveView()
-}
+//
+//#Preview {
+//    GuideImmersiveView()
+//}

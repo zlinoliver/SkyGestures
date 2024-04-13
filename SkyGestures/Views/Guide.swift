@@ -83,11 +83,11 @@ struct Guide: View {
             }
             .onReceive(NotificationCenter.default.publisher(for: .moveForwardGesture)) { _ in
                 print("move forward gesture detected in Guide View")
-                droneManager.pressMoveForward(distance: 20)
+                droneManager.pressMoveForward(distance: 35)
             }
             .onReceive(NotificationCenter.default.publisher(for: .moveBackwardGesture)) { _ in
                 print("move backward gesture detected in Guide View")
-                droneManager.pressMoveBackward(distance: 20)
+                droneManager.pressMoveBackward(distance: 35)
             }
             .onReceive(NotificationCenter.default.publisher(for: .flipGesture)) { _ in
                 print("flip gesture detected in Guide View")
@@ -159,14 +159,14 @@ struct GestureCommandView: View {
         }
     }
 }
-
-#Preview {
-    Guide()
-        .environment(ViewModel())
-        .glassBackgroundEffect(
-            in: RoundedRectangle(
-                cornerRadius: 32,
-                style: .continuous
-            )
-        )
-}
+//
+//#Preview {
+//    Guide()
+//        .environment(ViewModel())
+//        .glassBackgroundEffect(
+//            in: RoundedRectangle(
+//                cornerRadius: 32,
+//                style: .continuous
+//            )
+//        )
+//}
