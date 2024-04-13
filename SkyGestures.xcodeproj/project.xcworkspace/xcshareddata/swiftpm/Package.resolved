@@ -1,0 +1,15 @@
+{
+  "originHash" : "c37ae78a032f0d8f6156f6f1867b0b778e8f9cd1690481c2db53ea5643af84ae",
+  "pins" : [
+    {
+      "identity" : "handvector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/XanderXu/HandVector.git",
+      "state" : {
+        "revision" : "48a270a8adf2c836d31adea71cc329441261957d",
+        "version" : "0.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}

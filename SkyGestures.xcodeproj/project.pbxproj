@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4A4A9442BCA6273007C3053 /* SkyGesturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9432BCA6273007C3053 /* SkyGesturesApp.swift */; };
+		A4A4A94A2BCA6273007C3053 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A9492BCA6273007C3053 /* ImageBasedLighting.skybox */; };
+		A4A4A94C2BCA6274007C3053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A94B2BCA6274007C3053 /* Assets.xcassets */; };
+		A4A4A94F2BCA6274007C3053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A94E2BCA6274007C3053 /* Preview Assets.xcassets */; };
+		A4A4A95A2BCA6274007C3053 /* SkyGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9592BCA6274007C3053 /* SkyGesturesTests.swift */; };
+		A4A4A9682BCA628C007C3053 /* TelloDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9642BCA628C007C3053 /* TelloDrone.swift */; };
+		A4A4A9692BCA628C007C3053 /* TelloDroneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9652BCA628C007C3053 /* TelloDroneManager.swift */; };
+		A4A4A9752BCA631E007C3053 /* HandEmojiJson1.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */; };
+		A4A4A9762BCA631E007C3053 /* HandEmojiJson2.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */; };
+		A4A4A9772BCA631E007C3053 /* HandEmojiJson5.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */; };
+		A4A4A9782BCA631E007C3053 /* HandEmojiJsonFist.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */; };
+		A4A4A9792BCA631E007C3053 /* HandEmojiJsonOk.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */; };
+		A4A4A97A2BCA631E007C3053 /* HandEmojiJsonTips.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */; };
+		A4A4A97B2BCA631E007C3053 /* HandEmojiParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */; };
+		A4A4A97C2BCA631E007C3053 /* HandEmojiParameter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */; };
+		A4A4A97D2BCA631E007C3053 /* HandEmojiTotalJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */; };
+		A4A4A97F2BCA634A007C3053 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A97E2BCA634A007C3053 /* ViewModel.swift */; };
+		A4A4A9812BCA6350007C3053 /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9802BCA6350007C3053 /* NotificationNames.swift */; };
+		A4A4A9852BCA6357007C3053 /* GuideImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9822BCA6357007C3053 /* GuideImmersiveView.swift */; };
+		A4A4A98A2BCA6391007C3053 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9872BCA6391007C3053 /* Guide.swift */; };
+		A4A4A9952BCA6715007C3053 /* HandVector in Frameworks */ = {isa = PBXBuildFile; productRef = A4A4A9942BCA6715007C3053 /* HandVector */; };
+		A4A4A9982BCA6841007C3053 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A9962BCA6841007C3053 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4A4A9562BCA6274007C3053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A4A9342BCA6273007C3053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A4A93B2BCA6273007C3053;
+			remoteInfo = SkyGestures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4A4A93C2BCA6273007C3053 /* SkyGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4A9432BCA6273007C3053 /* SkyGesturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyGesturesApp.swift; sourceTree = "<group>"; };
+		A4A4A9492BCA6273007C3053 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
+		A4A4A94B2BCA6274007C3053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A4A94E2BCA6274007C3053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4A4A9502BCA6274007C3053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A4A9552BCA6274007C3053 /* SkyGesturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyGesturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4A9592BCA6274007C3053 /* SkyGesturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyGesturesTests.swift; sourceTree = "<group>"; };
+		A4A4A9642BCA628C007C3053 /* TelloDrone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelloDrone.swift; sourceTree = "<group>"; };
+		A4A4A9652BCA628C007C3053 /* TelloDroneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelloDroneManager.swift; sourceTree = "<group>"; };
+		A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson1.json; sourceTree = "<group>"; };
+		A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson2.json; sourceTree = "<group>"; };
+		A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson5.json; sourceTree = "<group>"; };
+		A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonFist.json; sourceTree = "<group>"; };
+		A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonOk.json; sourceTree = "<group>"; };
+		A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonTips.json; sourceTree = "<group>"; };
+		A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandEmojiParameter.swift; sourceTree = "<group>"; };
+		A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandEmojiParameter+Extension.swift"; sourceTree = "<group>"; };
+		A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiTotalJson.json; sourceTree = "<group>"; };
+		A4A4A97E2BCA634A007C3053 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A4A4A9802BCA6350007C3053 /* NotificationNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		A4A4A9822BCA6357007C3053 /* GuideImmersiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideImmersiveView.swift; sourceTree = "<group>"; };
+		A4A4A9872BCA6391007C3053 /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		A4A4A9902BCA6468007C3053 /* SkyGestures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SkyGestures.xcodeproj; sourceTree = "<group>"; };
+		A4A4A9972BCA6841007C3053 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4A4A9992BCA6888007C3053 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A4A9392BCA6273007C3053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4A9952BCA6715007C3053 /* HandVector in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4A9522BCA6274007C3053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4A4A9332BCA6273007C3053 = {
+			isa = PBXGroup;
+			children = (
+				A4A4A93E2BCA6273007C3053 /* SkyGestures */,
+				A4A4A9582BCA6274007C3053 /* SkyGesturesTests */,
+				A4A4A93D2BCA6273007C3053 /* Products */,
+				A4A4A98F2BCA6468007C3053 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A4A93D2BCA6273007C3053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A93C2BCA6273007C3053 /* SkyGestures.app */,
+				A4A4A9552BCA6274007C3053 /* SkyGesturesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A4A93E2BCA6273007C3053 /* SkyGestures */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9742BCA631E007C3053 /* HandExampleJson */,
+				A4A4A9662BCA628C007C3053 /* TelloControl */,
+				A4A4A9432BCA6273007C3053 /* SkyGesturesApp.swift */,
+				A4A4A97E2BCA634A007C3053 /* ViewModel.swift */,
+				A4A4A9802BCA6350007C3053 /* NotificationNames.swift */,
+				A4A4A9962BCA6841007C3053 /* Localizable.strings */,
+				A4A4A9892BCA6391007C3053 /* Views */,
+				A4A4A9842BCA6357007C3053 /* RealityViews */,
+				A4A4A9492BCA6273007C3053 /* ImageBasedLighting.skybox */,
+				A4A4A94B2BCA6274007C3053 /* Assets.xcassets */,
+				A4A4A9502BCA6274007C3053 /* Info.plist */,
+				A4A4A94D2BCA6274007C3053 /* Preview Content */,
+			);
+			path = SkyGestures;
+			sourceTree = "<group>";
+		};
+		A4A4A94D2BCA6274007C3053 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A94E2BCA6274007C3053 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4A4A9582BCA6274007C3053 /* SkyGesturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9592BCA6274007C3053 /* SkyGesturesTests.swift */,
+			);
+			path = SkyGesturesTests;
+			sourceTree = "<group>";
+		};
+		A4A4A9662BCA628C007C3053 /* TelloControl */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9642BCA628C007C3053 /* TelloDrone.swift */,
+				A4A4A9652BCA628C007C3053 /* TelloDroneManager.swift */,
+			);
+			path = TelloControl;
+			sourceTree = "<group>";
+		};
+		A4A4A9702BCA631E007C3053 /* EmojiJsonBackup */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */,
+				A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */,
+				A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */,
+				A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */,
+				A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */,
+				A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */,
+			);
+			path = EmojiJsonBackup;
+			sourceTree = "<group>";
+		};
+		A4A4A9742BCA631E007C3053 /* HandExampleJson */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9702BCA631E007C3053 /* EmojiJsonBackup */,
+				A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */,
+				A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */,
+				A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */,
+			);
+			path = HandExampleJson;
+			sourceTree = "<group>";
+		};
+		A4A4A9842BCA6357007C3053 /* RealityViews */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9822BCA6357007C3053 /* GuideImmersiveView.swift */,
+			);
+			path = RealityViews;
+			sourceTree = "<group>";
+		};
+		A4A4A9892BCA6391007C3053 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9872BCA6391007C3053 /* Guide.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4A4A98F2BCA6468007C3053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4A9902BCA6468007C3053 /* SkyGestures.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4A4A9912BCA6468007C3053 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A4A93B2BCA6273007C3053 /* SkyGestures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A4A95D2BCA6274007C3053 /* Build configuration list for PBXNativeTarget "SkyGestures" */;
+			buildPhases = (
+				A4A4A9382BCA6273007C3053 /* Sources */,
+				A4A4A9392BCA6273007C3053 /* Frameworks */,
+				A4A4A93A2BCA6273007C3053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyGestures;
+			packageProductDependencies = (
+				A4A4A9942BCA6715007C3053 /* HandVector */,
+			);
+			productName = SkyGestures;
+			productReference = A4A4A93C2BCA6273007C3053 /* SkyGestures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4A4A9542BCA6274007C3053 /* SkyGesturesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A4A9602BCA6274007C3053 /* Build configuration list for PBXNativeTarget "SkyGesturesTests" */;
+			buildPhases = (
+				A4A4A9512BCA6274007C3053 /* Sources */,
+				A4A4A9522BCA6274007C3053 /* Frameworks */,
+				A4A4A9532BCA6274007C3053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A4A9572BCA6274007C3053 /* PBXTargetDependency */,
+			);
+			name = SkyGesturesTests;
+			productName = SkyGesturesTests;
+			productReference = A4A4A9552BCA6274007C3053 /* SkyGesturesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A4A9342BCA6273007C3053 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A4A4A93B2BCA6273007C3053 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A4A4A9542BCA6274007C3053 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A4A4A93B2BCA6273007C3053;
+					};
+				};
+			};
+			buildConfigurationList = A4A4A9372BCA6273007C3053 /* Build configuration list for PBXProject "SkyGestures" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A4A4A9332BCA6273007C3053;
+			packageReferences = (
+				A4A4A9932BCA66F4007C3053 /* XCRemoteSwiftPackageReference "HandVector" */,
+			);
+			productRefGroup = A4A4A93D2BCA6273007C3053 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4A4A9912BCA6468007C3053 /* Products */;
+					ProjectRef = A4A4A9902BCA6468007C3053 /* SkyGestures.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A4A4A93B2BCA6273007C3053 /* SkyGestures */,
+				A4A4A9542BCA6274007C3053 /* SkyGesturesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A4A93A2BCA6273007C3053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4A94C2BCA6274007C3053 /* Assets.xcassets in Resources */,
+				A4A4A9782BCA631E007C3053 /* HandEmojiJsonFist.json in Resources */,
+				A4A4A9982BCA6841007C3053 /* Localizable.strings in Resources */,
+				A4A4A9752BCA631E007C3053 /* HandEmojiJson1.json in Resources */,
+				A4A4A9762BCA631E007C3053 /* HandEmojiJson2.json in Resources */,
+				A4A4A9772BCA631E007C3053 /* HandEmojiJson5.json in Resources */,
+				A4A4A94F2BCA6274007C3053 /* Preview Assets.xcassets in Resources */,
+				A4A4A97D2BCA631E007C3053 /* HandEmojiTotalJson.json in Resources */,
+				A4A4A94A2BCA6273007C3053 /* ImageBasedLighting.skybox in Resources */,
+				A4A4A9792BCA631E007C3053 /* HandEmojiJsonOk.json in Resources */,
+				A4A4A97A2BCA631E007C3053 /* HandEmojiJsonTips.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4A9532BCA6274007C3053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A4A9382BCA6273007C3053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4A98A2BCA6391007C3053 /* Guide.swift in Sources */,
+				A4A4A97F2BCA634A007C3053 /* ViewModel.swift in Sources */,
+				A4A4A97C2BCA631E007C3053 /* HandEmojiParameter+Extension.swift in Sources */,
+				A4A4A9692BCA628C007C3053 /* TelloDroneManager.swift in Sources */,
+				A4A4A97B2BCA631E007C3053 /* HandEmojiParameter.swift in Sources */,
+				A4A4A9852BCA6357007C3053 /* GuideImmersiveView.swift in Sources */,
+				A4A4A9442BCA6273007C3053 /* SkyGesturesApp.swift in Sources */,
+				A4A4A9812BCA6350007C3053 /* NotificationNames.swift in Sources */,
+				A4A4A9682BCA628C007C3053 /* TelloDrone.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A4A9512BCA6274007C3053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A4A95A2BCA6274007C3053 /* SkyGesturesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4A4A9572BCA6274007C3053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A4A93B2BCA6273007C3053 /* SkyGestures */;
+			targetProxy = A4A4A9562BCA6274007C3053 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4A4A9962BCA6841007C3053 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A4A9972BCA6841007C3053 /* en */,
+				A4A4A9992BCA6888007C3053 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4A4A95B2BCA6274007C3053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		A4A4A95C2BCA6274007C3053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		A4A4A95E2BCA6274007C3053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkyGestures/Preview Content\"";
+				DEVELOPMENT_TEAM = 823Z6LM2SW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SkyGestures;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreo.SkyGestures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		A4A4A95F2BCA6274007C3053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SkyGestures/Preview Content\"";
+				DEVELOPMENT_TEAM = 823Z6LM2SW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SkyGestures;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreo.SkyGestures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		A4A4A9612BCA6274007C3053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 823Z6LM2SW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreo.SkyGesturesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyGestures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyGestures";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Debug;
+		};
+		A4A4A9622BCA6274007C3053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 823Z6LM2SW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreo.SkyGesturesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyGestures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyGestures";
+				XROS_DEPLOYMENT_TARGET = 1.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A4A9372BCA6273007C3053 /* Build configuration list for PBXProject "SkyGestures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A4A95B2BCA6274007C3053 /* Debug */,
+				A4A4A95C2BCA6274007C3053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A4A95D2BCA6274007C3053 /* Build configuration list for PBXNativeTarget "SkyGestures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A4A95E2BCA6274007C3053 /* Debug */,
+				A4A4A95F2BCA6274007C3053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A4A9602BCA6274007C3053 /* Build configuration list for PBXNativeTarget "SkyGesturesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A4A9612BCA6274007C3053 /* Debug */,
+				A4A4A9622BCA6274007C3053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4A4A9932BCA66F4007C3053 /* XCRemoteSwiftPackageReference "HandVector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XanderXu/HandVector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4A4A9942BCA6715007C3053 /* HandVector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A4A9932BCA66F4007C3053 /* XCRemoteSwiftPackageReference "HandVector" */;
+			productName = HandVector;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A4A4A9342BCA6273007C3053 /* Project object */;
+}
