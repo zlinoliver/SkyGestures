@@ -1,0 +1,439 @@
+{
+    "emoji": "🤘",
+    "left": [
+        {
+            "name": "indexFingerIntermediateBase",
+            "position": [
+                0.13607183,
+                0.005104883,
+                -0.031190787
+            ]
+        },
+        {
+            "name": "thumbKnuckle",
+            "position": [
+                0.024152331,
+                0.011299849,
+                -0.019692391
+            ]
+        },
+        {
+            "position": [
+                0.028128061,
+                0.0008522868,
+                0.008922368
+            ],
+            "name": "ringFingerMetacarpal"
+        },
+        {
+            "position": [
+                0.1315647,
+                0.01855687,
+                0.0017765956
+            ],
+            "name": "middleFingerIntermediateBase"
+        },
+        {
+            "position": [
+                0.06363465,
+                0.04107101,
+                -0.021021165
+            ],
+            "name": "thumbIntermediateBase"
+        },
+        {
+            "position": [
+                0.09848821,
+                0.05171794,
+                0.024413336
+            ],
+            "name": "thumbTip"
+        },
+        {
+            "name": "thumbIntermediateTip",
+            "position": [
+                0.086399585,
+                0.049177065,
+                -0.0009865053
+            ]
+        },
+        {
+            "position": [
+                0.027976163,
+                -0.0006623864,
+                -0.0042617843
+            ],
+            "name": "middleFingerMetacarpal"
+        },
+        {
+            "position": [
+                0.11985585,
+                0.022868762,
+                0.015478082
+            ],
+            "name": "ringFingerIntermediateBase"
+        },
+        {
+            "position": [
+                0.02712503,
+                0.0023332834,
+                0.024101093
+            ],
+            "name": "littleFingerMetacarpal"
+        },
+        {
+            "name": "littleFingerTip",
+            "position": [
+                0.14722973,
+                0.02225625,
+                0.0313587
+            ]
+        },
+        {
+            "name": "middleFingerKnuckle",
+            "position": [
+                0.091549635,
+                -0.0024380886,
+                -0.003708475
+            ]
+        },
+        {
+            "position": [
+                0.15999715,
+                0.0063951695,
+                -0.03489001
+            ],
+            "name": "indexFingerIntermediateTip"
+        },
+        {
+            "name": "littleFingerIntermediateBase",
+            "position": [
+                0.11128227,
+                0.013459464,
+                0.030143036
+            ]
+        },
+        {
+            "position": [
+                -0.23255417,
+                -0.01358826,
+                -0.02713325
+            ],
+            "name": "forearmArm"
+        },
+        {
+            "position": [
+                0.12913135,
+                0.016323062,
+                0.030788139
+            ],
+            "name": "littleFingerIntermediateTip"
+        },
+        {
+            "name": "indexFingerKnuckle",
+            "position": [
+                0.09316754,
+                -0.002361631,
+                -0.024386084
+            ]
+        },
+        {
+            "position": [
+                0.025973488,
+                -0.0005804002,
+                -0.017297119
+            ],
+            "name": "indexFingerMetacarpal"
+        },
+        {
+            "name": "ringFingerKnuckle",
+            "position": [
+                0.08783062,
+                -0.0007022143,
+                0.0137270605
+            ]
+        },
+        {
+            "name": "wrist",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "position": [
+                0.18158022,
+                0.006923999,
+                -0.038195185
+            ],
+            "name": "indexFingerTip"
+        },
+        {
+            "name": "littleFingerKnuckle",
+            "position": [
+                0.0787857,
+                0.0011435766,
+                0.029124053
+            ]
+        },
+        {
+            "name": "ringFingerIntermediateTip",
+            "position": [
+                0.09746522,
+                0.035866026,
+                0.015498409
+            ]
+        },
+        {
+            "position": [
+                0.0890266,
+                0.026859628,
+                -0.0060042604
+            ],
+            "name": "middleFingerTip"
+        },
+        {
+            "position": [
+                0.10860029,
+                0.03386992,
+                -0.0026814067
+            ],
+            "name": "middleFingerIntermediateTip"
+        },
+        {
+            "name": "forearmWrist",
+            "position": [
+                1.5646219e-7,
+                0,
+                7.450581e-9
+            ]
+        },
+        {
+            "name": "ringFingerTip",
+            "position": [
+                0.07786615,
+                0.03208749,
+                0.015210902
+            ]
+        }
+    ],
+    "right": [
+        {
+            "name": "littleFingerIntermediateBase",
+            "position": [
+                -0.11116196,
+                -0.013420972,
+                -0.04455615
+            ]
+        },
+        {
+            "name": "littleFingerTip",
+            "position": [
+                -0.14691743,
+                -0.01434531,
+                -0.059255704
+            ]
+        },
+        {
+            "name": "ringFingerIntermediateBase",
+            "position": [
+                -0.112232134,
+                -0.03371652,
+                -0.022555932
+            ]
+        },
+        {
+            "name": "littleFingerIntermediateTip",
+            "position": [
+                -0.12855408,
+                -0.0134785455,
+                -0.05170646
+            ]
+        },
+        {
+            "position": [
+                -0.09531336,
+                0.0016004505,
+                0.024307312
+            ],
+            "name": "indexFingerKnuckle"
+        },
+        {
+            "position": [
+                -0.0862768,
+                -0.036439396,
+                -0.020164028
+            ],
+            "name": "ringFingerIntermediateTip"
+        },
+        {
+            "name": "forearmWrist",
+            "position": [
+                8.381903e-8,
+                2.9802322e-8,
+                -1.4901161e-8
+            ]
+        },
+        {
+            "position": [
+                -0.028251173,
+                0.00055268407,
+                0.003969848
+            ],
+            "name": "middleFingerMetacarpal"
+        },
+        {
+            "position": [
+                -0.09326242,
+                -0.05084243,
+                -0.023904214
+            ],
+            "name": "thumbTip"
+        },
+        {
+            "name": "indexFingerTip",
+            "position": [
+                -0.1816686,
+                -0.02710245,
+                0.022342063
+            ]
+        },
+        {
+            "position": [
+                -0.08026046,
+                -0.0018513488,
+                -0.030421376
+            ],
+            "name": "littleFingerKnuckle"
+        },
+        {
+            "position": [
+                -0.078561775,
+                -0.021379318,
+                0.0042690765
+            ],
+            "name": "middleFingerTip"
+        },
+        {
+            "position": [
+                -0.091681585,
+                -0.03729455,
+                0.00029064598
+            ],
+            "name": "middleFingerIntermediateTip"
+        },
+        {
+            "name": "ringFingerKnuckle",
+            "position": [
+                -0.08987266,
+                -0.000033347926,
+                -0.0159808
+            ]
+        },
+        {
+            "name": "thumbIntermediateTip",
+            "position": [
+                -0.08735586,
+                -0.05102195,
+                0.0033042438
+            ]
+        },
+        {
+            "name": "ringFingerTip",
+            "position": [
+                -0.07103121,
+                -0.024113772,
+                -0.017235568
+            ]
+        },
+        {
+            "name": "indexFingerIntermediateTip",
+            "position": [
+                -0.15986428,
+                -0.024416398,
+                0.022769006
+            ]
+        },
+        {
+            "position": [
+                -0.024296228,
+                -0.0113167465,
+                0.019782752
+            ],
+            "name": "thumbKnuckle"
+        },
+        {
+            "position": [
+                0.2475562,
+                -0.051814716,
+                -0.013286574
+            ],
+            "name": "forearmArm"
+        },
+        {
+            "position": [
+                -0.11941149,
+                -0.036597267,
+                -0.004341079
+            ],
+            "name": "middleFingerIntermediateBase"
+        },
+        {
+            "name": "thumbIntermediateBase",
+            "position": [
+                -0.06531604,
+                -0.042041272,
+                0.024938352
+            ]
+        },
+        {
+            "name": "ringFingerMetacarpal",
+            "position": [
+                -0.028452305,
+                -0.0010050237,
+                -0.009360373
+            ]
+        },
+        {
+            "position": [
+                -0.026155297,
+                0.0005105734,
+                0.017225027
+            ],
+            "name": "indexFingerMetacarpal"
+        },
+        {
+            "name": "middleFingerKnuckle",
+            "position": [
+                -0.093606725,
+                0.0015945319,
+                0.0025897496
+            ]
+        },
+        {
+            "position": [
+                -0.13616793,
+                -0.01800662,
+                0.023296667
+            ],
+            "name": "indexFingerIntermediateBase"
+        },
+        {
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "name": "wrist"
+        },
+        {
+            "name": "littleFingerMetacarpal",
+            "position": [
+                -0.027498815,
+                -0.0026820004,
+                -0.024667732
+            ]
+        }
+    ]
+}

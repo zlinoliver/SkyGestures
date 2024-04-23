@@ -14,12 +14,11 @@
 		A4A4A95A2BCA6274007C3053 /* SkyGesturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9592BCA6274007C3053 /* SkyGesturesTests.swift */; };
 		A4A4A9682BCA628C007C3053 /* TelloDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9642BCA628C007C3053 /* TelloDrone.swift */; };
 		A4A4A9692BCA628C007C3053 /* TelloDroneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9652BCA628C007C3053 /* TelloDroneManager.swift */; };
-		A4A4A9752BCA631E007C3053 /* HandEmojiJson1.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */; };
-		A4A4A9762BCA631E007C3053 /* HandEmojiJson2.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */; };
-		A4A4A9772BCA631E007C3053 /* HandEmojiJson5.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */; };
-		A4A4A9782BCA631E007C3053 /* HandEmojiJsonFist.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */; };
-		A4A4A9792BCA631E007C3053 /* HandEmojiJsonOk.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */; };
-		A4A4A97A2BCA631E007C3053 /* HandEmojiJsonTips.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */; };
+		A4A4A9752BCA631E007C3053 /* OKHandEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96A2BCA631E007C3053 /* OKHandEmoji.json */; };
+		A4A4A9762BCA631E007C3053 /* LoveYouEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96B2BCA631E007C3053 /* LoveYouEmoji.json */; };
+		A4A4A9772BCA631E007C3053 /* PointUpHandEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96C2BCA631E007C3053 /* PointUpHandEmoji.json */; };
+		A4A4A9782BCA631E007C3053 /* SignOfHornsEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96D2BCA631E007C3053 /* SignOfHornsEmoji.json */; };
+		A4A4A97A2BCA631E007C3053 /* RaisedHandEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A96F2BCA631E007C3053 /* RaisedHandEmoji.json */; };
 		A4A4A97B2BCA631E007C3053 /* HandEmojiParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */; };
 		A4A4A97C2BCA631E007C3053 /* HandEmojiParameter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */; };
 		A4A4A97D2BCA631E007C3053 /* HandEmojiTotalJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */; };
@@ -42,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43485992BD56B1A0079AB2D /* CallMeHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CallMeHandEmoji.json; sourceTree = "<group>"; };
+		A434859A2BD56B460079AB2D /* PointLeftHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PointLeftHandEmoji.json; sourceTree = "<group>"; };
+		A434859B2BD56B610079AB2D /* RaisedFistEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RaisedFistEmoji.json; sourceTree = "<group>"; };
+		A434859C2BD56B7D0079AB2D /* ThumbsUpHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThumbsUpHandEmoji.json; sourceTree = "<group>"; };
+		A434859E2BD56BC50079AB2D /* VictoryHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VictoryHandEmoji.json; sourceTree = "<group>"; };
+		A434859F2BD7F97E0079AB2D /* PinchHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PinchHandEmoji.json; sourceTree = "<group>"; };
+		A43485A02BD7FB160079AB2D /* FingerHeartHandEmoji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FingerHeartHandEmoji.json; sourceTree = "<group>"; };
+		A43485A22BD816C60079AB2D /* HandEmojiTotalJsonOriginal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HandEmojiTotalJsonOriginal.json; sourceTree = "<group>"; };
 		A4A4A93C2BCA6273007C3053 /* SkyGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A4A9432BCA6273007C3053 /* SkyGesturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyGesturesApp.swift; sourceTree = "<group>"; };
 		A4A4A9492BCA6273007C3053 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
@@ -52,12 +59,11 @@
 		A4A4A9592BCA6274007C3053 /* SkyGesturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyGesturesTests.swift; sourceTree = "<group>"; };
 		A4A4A9642BCA628C007C3053 /* TelloDrone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelloDrone.swift; sourceTree = "<group>"; };
 		A4A4A9652BCA628C007C3053 /* TelloDroneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelloDroneManager.swift; sourceTree = "<group>"; };
-		A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson1.json; sourceTree = "<group>"; };
-		A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson2.json; sourceTree = "<group>"; };
-		A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJson5.json; sourceTree = "<group>"; };
-		A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonFist.json; sourceTree = "<group>"; };
-		A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonOk.json; sourceTree = "<group>"; };
-		A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiJsonTips.json; sourceTree = "<group>"; };
+		A4A4A96A2BCA631E007C3053 /* OKHandEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OKHandEmoji.json; sourceTree = "<group>"; };
+		A4A4A96B2BCA631E007C3053 /* LoveYouEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoveYouEmoji.json; sourceTree = "<group>"; };
+		A4A4A96C2BCA631E007C3053 /* PointUpHandEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PointUpHandEmoji.json; sourceTree = "<group>"; };
+		A4A4A96D2BCA631E007C3053 /* SignOfHornsEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SignOfHornsEmoji.json; sourceTree = "<group>"; };
+		A4A4A96F2BCA631E007C3053 /* RaisedHandEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RaisedHandEmoji.json; sourceTree = "<group>"; };
 		A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandEmojiParameter.swift; sourceTree = "<group>"; };
 		A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandEmojiParameter+Extension.swift"; sourceTree = "<group>"; };
 		A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandEmojiTotalJson.json; sourceTree = "<group>"; };
@@ -155,12 +161,18 @@
 		A4A4A9702BCA631E007C3053 /* EmojiJsonBackup */ = {
 			isa = PBXGroup;
 			children = (
-				A4A4A96A2BCA631E007C3053 /* HandEmojiJson1.json */,
-				A4A4A96B2BCA631E007C3053 /* HandEmojiJson2.json */,
-				A4A4A96C2BCA631E007C3053 /* HandEmojiJson5.json */,
-				A4A4A96D2BCA631E007C3053 /* HandEmojiJsonFist.json */,
-				A4A4A96E2BCA631E007C3053 /* HandEmojiJsonOk.json */,
-				A4A4A96F2BCA631E007C3053 /* HandEmojiJsonTips.json */,
+				A4A4A96A2BCA631E007C3053 /* OKHandEmoji.json */,
+				A4A4A96B2BCA631E007C3053 /* LoveYouEmoji.json */,
+				A4A4A96C2BCA631E007C3053 /* PointUpHandEmoji.json */,
+				A4A4A96D2BCA631E007C3053 /* SignOfHornsEmoji.json */,
+				A4A4A96F2BCA631E007C3053 /* RaisedHandEmoji.json */,
+				A434859A2BD56B460079AB2D /* PointLeftHandEmoji.json */,
+				A43485992BD56B1A0079AB2D /* CallMeHandEmoji.json */,
+				A434859B2BD56B610079AB2D /* RaisedFistEmoji.json */,
+				A434859C2BD56B7D0079AB2D /* ThumbsUpHandEmoji.json */,
+				A434859F2BD7F97E0079AB2D /* PinchHandEmoji.json */,
+				A43485A02BD7FB160079AB2D /* FingerHeartHandEmoji.json */,
+				A434859E2BD56BC50079AB2D /* VictoryHandEmoji.json */,
 			);
 			path = EmojiJsonBackup;
 			sourceTree = "<group>";
@@ -171,6 +183,7 @@
 				A4A4A9702BCA631E007C3053 /* EmojiJsonBackup */,
 				A4A4A9712BCA631E007C3053 /* HandEmojiParameter.swift */,
 				A4A4A9722BCA631E007C3053 /* HandEmojiParameter+Extension.swift */,
+				A43485A22BD816C60079AB2D /* HandEmojiTotalJsonOriginal.json */,
 				A4A4A9732BCA631E007C3053 /* HandEmojiTotalJson.json */,
 			);
 			path = HandExampleJson;
@@ -300,16 +313,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A4A94C2BCA6274007C3053 /* Assets.xcassets in Resources */,
-				A4A4A9782BCA631E007C3053 /* HandEmojiJsonFist.json in Resources */,
+				A4A4A9782BCA631E007C3053 /* SignOfHornsEmoji.json in Resources */,
 				A4A4A9982BCA6841007C3053 /* Localizable.strings in Resources */,
-				A4A4A9752BCA631E007C3053 /* HandEmojiJson1.json in Resources */,
-				A4A4A9762BCA631E007C3053 /* HandEmojiJson2.json in Resources */,
-				A4A4A9772BCA631E007C3053 /* HandEmojiJson5.json in Resources */,
+				A4A4A9752BCA631E007C3053 /* OKHandEmoji.json in Resources */,
+				A4A4A9762BCA631E007C3053 /* LoveYouEmoji.json in Resources */,
+				A4A4A9772BCA631E007C3053 /* PointUpHandEmoji.json in Resources */,
 				A4A4A94F2BCA6274007C3053 /* Preview Assets.xcassets in Resources */,
 				A4A4A97D2BCA631E007C3053 /* HandEmojiTotalJson.json in Resources */,
 				A4A4A94A2BCA6273007C3053 /* ImageBasedLighting.skybox in Resources */,
-				A4A4A9792BCA631E007C3053 /* HandEmojiJsonOk.json in Resources */,
-				A4A4A97A2BCA631E007C3053 /* HandEmojiJsonTips.json in Resources */,
+				A4A4A97A2BCA631E007C3053 /* RaisedHandEmoji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

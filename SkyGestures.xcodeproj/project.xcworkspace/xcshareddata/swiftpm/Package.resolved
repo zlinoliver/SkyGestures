@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/XanderXu/HandVector.git",
       "state" : {
-        "revision" : "48a270a8adf2c836d31adea71cc329441261957d",
-        "version" : "0.2.2"
+        "revision" : "f4a0a8ef814ce2febfda35bff11232b7c6287bdb",
+        "version" : "0.3.0"
       }
     }
   ],

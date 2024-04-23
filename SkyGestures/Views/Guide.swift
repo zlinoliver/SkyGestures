@@ -150,7 +150,7 @@ struct GestureCommandView: View {
     let symbolName: String
 
     var body: some View {
-        VStack {
+        VStack { 
             Text(symbolName)
                 .font(.largeTitle)
             Text(gesture)

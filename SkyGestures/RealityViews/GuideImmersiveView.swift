@@ -31,7 +31,7 @@ struct GuideImmersiveView: View {
                 if let lastTime = lastCommandTime, Date().timeIntervalSince(lastTime) < 2 {
                     return
                 }
-                
+        
                 // 手势识别并执行相应操作
                 if let okGesture = model.handEmojiDict["👌"]?.convertToHandVectorMatcher(),
                    let upGesture = model.handEmojiDict["👆"]?.convertToHandVectorMatcher(),
@@ -39,63 +39,63 @@ struct GuideImmersiveView: View {
                    let openHandGesture = model.handEmojiDict["✋"]?.convertToHandVectorMatcher(),
                    let peaceGesture = model.handEmojiDict["✌️"]?.convertToHandVectorMatcher(){
                    
-                    // 检查左手向量
-                    if let leftHandVector = model.latestHandTracking.leftHandVector {
-                        
-                        // 计算左手对👌手势的相似度
-                        if let leftOKGesture = okGesture.left {
-                            let leftOKScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftOKGesture)
-//                            print("Left hand 👌 score: \(leftOKScore)")
+                    // 检查右手向量
+                    if let rightHandVector = model.latestHandTracking.rightHandVector {
 
-                            if leftOKScore > 0.9 {
+                        // 计算右手对👌手势的相似度
+                        if let rightOKGesture = okGesture.right {
+                            let rightOKScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightOKGesture)
+                            print("right hand 👌 score: \(rightOKScore)")
+
+                            if rightOKScore > 0.90 {
                                 print("Takeoff")
                                 NotificationCenter.default.post(name: .takeoffGesture, object: nil)
                                 lastCommandTime = Date() // 更新发送指令的时间
                             }
                         }
 
-                        // 计算左手对✊手势的相似度
-                        if let leftFistGesture = fistGesture.left {
-                            let leftFistScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftFistGesture)
-//                            print("Left hand ✊ score: \(leftFistScore)")
+                        // 计算右手对✊手势的相似度
+                        if let rightFistGesture = fistGesture.right {
+                            let rightFistScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightFistGesture)
+                            print("right hand ✊ score: \(rightFistScore)")
 
-                            if leftFistScore > 0.9 {
+                            if rightFistScore > 0.90 {
                                 print("Land")
                                 NotificationCenter.default.post(name: .landGesture, object: nil)
                                 lastCommandTime = Date()
                             }
                         }
 
-                        // 计算左手对👆手势的相似度
-                        if let leftUpGesture = upGesture.left {
-                            let leftUpScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftUpGesture)
-//                            print("Left hand 👆 score: \(leftUpScore)")
+                        // 计算右手对👆手势的相似度
+                        if let rightUpGesture = upGesture.right {
+                            let rightUpScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightUpGesture)
+                            print("right hand 👆 score: \(rightUpScore)")
 
-                            if leftUpScore > 0.85 {
+                            if rightUpScore > 0.90 {
                                 print("Move forward")
                                 NotificationCenter.default.post(name: .moveForwardGesture, object: nil)
                                 lastCommandTime = Date() // 更新发送指令的时间
                             }
                         }
 
-                        // 计算左手对✋手势的相似度
-                        if let leftOpenHandGesture = openHandGesture.left {
-                            let leftOpenHandScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftOpenHandGesture)
-//                            print("Left hand ✋ score: \(leftOpenHandScore)")
+                        // 计算右手对✋手势的相似度
+                        if let rightOpenHandGesture = openHandGesture.right {
+                            let rightOpenHandScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightOpenHandGesture)
+                            print("right hand ✋ score: \(rightOpenHandScore)")
 
-                            if leftOpenHandScore > 0.85 {
+                            if rightOpenHandScore > 0.90 {
                                 print("Move backward")
                                 NotificationCenter.default.post(name: .moveBackwardGesture, object: nil)
                                 lastCommandTime = Date()
                             }
                         }
                         
-                        // 计算左手对✌️手势的相似度
-                        if let leftPeaceGesture = peaceGesture.left {
-                            let leftPeaceScore = leftHandVector.similarity(of: HandVectorMatcher.allFingers, to: leftPeaceGesture)
-//                            print("Left hand ✌️ score: \(leftPeaceScore)")
+                        // 计算右手对✌️手势的相似度
+                        if let rightPeaceGesture = peaceGesture.right {
+                            let rightPeaceScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightPeaceGesture)
+                            print("right hand ✌️ score: \(rightPeaceScore)")
 
-                            if leftPeaceScore > 0.83 {
+                            if rightPeaceScore > 0.90 {
                                 print("Flip")
                                 NotificationCenter.default.post(name: .flipGesture, object: nil)
                                 lastCommandTime = Date()
@@ -111,52 +111,6 @@ struct GuideImmersiveView: View {
             }))
             
             model.latestHandTracking.isSkeletonVisible = true
-
-//
-//            subscriptions.append(content.subscribe(to: SceneEvents.Update.self, on: nil, { event in
-//                    // 检查距离上次发送指令是否已经过去3秒
-//                    if let lastTime = lastCommandTime, Date().timeIntervalSince(lastTime) < 3 {
-//                        print("Skipping this check, within cooldown period.")
-//                        return
-//                    }
-//                    
-//                    // 手势识别并执行相应操作
-//                    if let okGesture = model.handEmojiDict["👌"]?.convertToHandVectorMatcher(),
-//                       let upGesture = model.handEmojiDict["👆"]?.convertToHandVectorMatcher(),
-//                       let fistGesture = model.handEmojiDict["✊"]?.convertToHandVectorMatcher(),
-//                       let openHandGesture = model.handEmojiDict["✋"]?.convertToHandVectorMatcher() {
-//
-//                        // 检查右手向量
-//                        if let rightHandVector = model.latestHandTracking.rightHandVector {
-//                            print("Checking right hand gestures...")
-//                            print("Right hand vector is available.")
-//                            
-//                            // 计算右手对👌手势的相似度
-//                            if let rightOKGesture = okGesture.right {
-//                                let rightOKScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightOKGesture)
-//                                print("Right hand 👌 score: \(rightOKScore)")
-//                                if rightOKScore > 0.8 {
-//                                    print("Takeoff")
-//                                    lastCommandTime = Date() // 更新发送指令的时间
-//                                }
-//                            }
-//
-//                            // 计算右手对✊手势的相似度
-//                            if let rightFistGesture = fistGesture.right {
-//                                let rightFistScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightFistGesture)
-//                                print("Right hand ✊ score: \(rightFistScore)")
-//                                if rightFistScore > 0.8 {
-//                                    print("Takeoff")
-//                                    lastCommandTime = Date()
-//                                }
-//                            }
-//                        } else {
-//                            print("No right hand vector available.")
-//                        }
-//                    } else {
-//                        print("Failed to load hand gestures.")
-//                    }
-//                }))
             
         } update: { content in
             

@@ -11,7 +11,21 @@ import HandVector
 
 //🫶🤲👐🙌👏🙏
 //👍👎👊✊🤛🤜🫷🫸🤞✌️🫰🤟🤘👌🤌🤏🫳🫴👈👉👆👇☝️✋🤚🖐️🖖👋🤙🫲🫱🖕✍️🫵
-//todo:👍👎🫷🫸🤞🤟🤘🤏🫳🫴🖐️🖖👋🤙🖕
+//Drone Control Gestures:
+//Takeoff: 👌
+//Land: ✊
+//Fly Upward: 👆
+//Fly Downward: 🤏
+//Fly Forward: 🤙
+//Fly Backward: 🤚
+//Fly Leftward: 👈
+//Fly Rightward: 👍
+//Stop: 🫰
+//Rotate Leftward: 🤘
+//Rotate Rightward: 🤟
+//Flip: ✌️
+
+
 struct HandEmojiParameter: Codable {
     struct JointInfo: Codable {
         let position: simd_float3
