@@ -5,6 +5,7 @@
   Created by zlinoliver on 2024/4/13.
   
 */
+
 "Start to use Hand Gestures" = "开始使用手势控制";
 "Try to make the same gesture,\nyou can use left or right hand" = "试着做出相同的手势\n左手或右手都可以";
 "left score:%lld" = "左手得分:%lld";
@@ -17,10 +18,15 @@
 "Try to use the following hand gestures to control Tello drone" = "试着做出以下手势，操控Tello无人机";
 "Takeoff" = "起飞";
 "Land" = "降落";
-"Move Forward" = "前进";
-"Move Backward" = "后退";
+"Fly Forward" = "前进";
+"Fly Backward" = "后退";
+"Fly Upward" = "上升";
+"Fly Downward" = "下降";
+"Fly Leftward" = "左移";
+"Fly Rightward" = "右移";
 "Rotate Leftward" = "左转";
 "Rotate Rightward" = "右转";
+"Stop" = "停止";
 "Flip" = "翻跟斗";
 "Left" = "左手";
 "Right" = "右手";

@@ -29,7 +29,7 @@ class TelloDroneManager: ObservableObject {
     }
 
     //Take off
-    func pressTakeoff() {
+    func takeoff() {
         telloDrone?.takeoff { response in
             DispatchQueue.main.async {
                 print("Takeoff response: \(response)")
@@ -38,26 +38,37 @@ class TelloDroneManager: ObservableObject {
     }
 
     //Land
-    func pressLand() {
+    func land() {
         telloDrone?.land { response in
             DispatchQueue.main.async {
                 print("Land response: \(response)")
             }
         }
     }
-
-    //Move forward
-    //distance (int): Distance to move.
-    func pressMoveForward(distance: Int) {
+    
+    // Set the speed of the drone in KPH
+    // speed value: 1 ~ 5
+    func setSpeed(kph: Int) {
+        // Define the input range and desired speed range in KPH
+        let inputRange: ClosedRange<Int> = 1...5
+        let speedRange: ClosedRange<Double> = 0.1...3.6
         
-        //This method expects KPH or MPH. The Tello API expects speeds from 1 to 100 centimeters/second.
-        //Metric: .1 to 3.6 KPH
-        //Args: speed (int|float): Speed.
-        telloDrone?.setSpeed(speed: 10, completion: { response in
+        // Convert the input KPH from the range of 1-5 to a speed value in the range of 0.1 KPH to 3.6 KPH
+        let speedValue = Double(kph - inputRange.lowerBound) / Double(inputRange.upperBound - inputRange.lowerBound) * (speedRange.upperBound - speedRange.lowerBound) + speedRange.lowerBound
+        
+        // Convert KPH to centimeters/second, ensuring the result is within the API's expected range (1 to 100)
+        let telloSpeed = min(max(Int(speedValue * 27.778), 1), 100)
+        
+        telloDrone?.setSpeed(speed: telloSpeed, completion: { response in
             DispatchQueue.main.async {
-                print("setSpeed response: \(response)")
+                print("Set Speed to \(speedValue) KPH (\(telloSpeed) cm/s) response: \(response)")
             }
         })
+    }
+
+    //Fly forward
+    //distance (int): Distance to move.
+    func flyForward(distance: Int) {
         
         telloDrone?.moveForward(distance: distance) { response in
             DispatchQueue.main.async {
@@ -66,18 +77,9 @@ class TelloDroneManager: ObservableObject {
         }
     }
 
-    //Move backward
+    //Fly backward
     //distance (int): Distance to move.
-    func pressMoveBackward(distance: Int) {
-        
-        //This method expects KPH or MPH. The Tello API expects speeds from 1 to 100 centimeters/second.
-        //Metric: .1 to 3.6 KPH
-        //Args: speed (int|float): Speed.
-        telloDrone?.setSpeed(speed: 10, completion: { response in
-            DispatchQueue.main.async {
-                print("setSpeed response: \(response)")
-            }
-        })
+    func flyBackward(distance: Int) {
         
         telloDrone?.moveBackward(distance: distance) { response in
             DispatchQueue.main.async {
@@ -88,12 +90,83 @@ class TelloDroneManager: ObservableObject {
 
     //Flip the drone
     //direction (str): Direction to flip, 'l', 'r', 'f', 'b'.
-    func pressFlip(direction: String) {
+    func flip(direction: String) {
+        
         telloDrone?.flip(direction: direction) { response in
             DispatchQueue.main.async {
                 print("Flip \(direction) response: \(response)")
             }
         }
+    }
+    
+    
+    // Fly upward
+    //distance (int): Distance to move.
+    func flyUpward(distance: Int) {
+        telloDrone?.flyUpward(distance: distance) { response in
+            DispatchQueue.main.async {
+                print("Fly Upward response: \(response)")
+            }
+        }
+    }
+
+    // Fly downward
+    //distance (int): Distance to move.
+    func flyDownward(distance: Int) {
+        telloDrone?.flyDownward(distance: distance) { response in
+            DispatchQueue.main.async {
+                print("Fly Downward response: \(response)")
+            }
+        }
+    }
+
+    // Fly leftward
+    //distance (int): Distance to move.
+    func flyLeftward(distance: Int) {
+        telloDrone?.flyLeftward(distance: distance) { response in
+            DispatchQueue.main.async {
+                print("Fly Leftward response: \(response)")
+            }
+        }
+    }
+
+    // Fly rightward
+    //distance (int): Distance to move.
+    func flyRightward(distance: Int) {
+        telloDrone?.flyRightward(distance: distance) { response in
+            DispatchQueue.main.async {
+                print("Fly Rightward response: \(response)")
+            }
+        }
+    }
+
+    // Rotate leftward
+    //degrees (int): Degrees to rotate, 1 to 360.
+    func rotateLeftward(degrees: Int) {
+        telloDrone?.rotateLeftward(degrees: degrees) { response in
+            DispatchQueue.main.async {
+                print("Rotate Leftward response: \(response)")
+            }
+        }
+    }
+
+    // Rotate rightward
+    //degrees (int): Degrees to rotate, 1 to 360.
+    func rotateRightward(degrees: Int) {
+        telloDrone?.rotateRightward(degrees: degrees) { response in
+            DispatchQueue.main.async {
+                print("Rotate Rightward response: \(response)")
+            }
+        }
+    }
+
+    // Stop movement
+    func stop() {
+        telloDrone?.stop(completion: { response in
+            DispatchQueue.main.async {
+                print("Stop response: \(response)")
+            }
+        })
     }
     
 }

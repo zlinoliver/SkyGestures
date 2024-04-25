@@ -26,7 +26,7 @@ struct Guide: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                     .padding(.bottom)
-                    .padding(.vertical, 30)
+                    .padding(.vertical, 20)
             }
             .padding()
 
@@ -51,71 +51,90 @@ struct Guide: View {
                         .cornerRadius(10)
                 }
                 .disabled(droneManager.isConnected)
-                
-//                // Take off button
-//                Button("Takeoff") {
-//                    droneManager.pressTakeoff()
-//                }
-//                
-//                // Land button
-//                Button("Land") {
-//                    droneManager.pressLand()
-//                }
-//                
-//                // Move forward button
-//                Button("Move Forward") {
-//                    droneManager.pressMoveForward(distance: 20)
-//                }
-//
-//                // Move backward button
-//                Button("Move Backward") {
-//                    droneManager.pressMoveBackward(distance: 20)
-//                }
                                         
             }
             .onReceive(NotificationCenter.default.publisher(for: .takeoffGesture)) { _ in
                 print("Takeoff gesture detected in Guide View")
-                droneManager.pressTakeoff()
+                droneManager.takeoff()
+                droneManager.setSpeed(kph: 2)
             }
             .onReceive(NotificationCenter.default.publisher(for: .landGesture)) { _ in
                 print("Land gesture detected in Guide View")
-                droneManager.pressLand()
+                droneManager.land()
             }
-            .onReceive(NotificationCenter.default.publisher(for: .moveForwardGesture)) { _ in
-                print("move forward gesture detected in Guide View")
-                droneManager.pressMoveForward(distance: 35)
+            .onReceive(NotificationCenter.default.publisher(for: .flyForwardGesture)) { _ in
+                print("fly forward gesture detected in Guide View")
+                droneManager.flyForward(distance: 35)
             }
-            .onReceive(NotificationCenter.default.publisher(for: .moveBackwardGesture)) { _ in
-                print("move backward gesture detected in Guide View")
-                droneManager.pressMoveBackward(distance: 35)
+            .onReceive(NotificationCenter.default.publisher(for: .flyBackwardGesture)) { _ in
+                print("fly backward gesture detected in Guide View")
+                droneManager.flyBackward(distance: 35)
             }
             .onReceive(NotificationCenter.default.publisher(for: .flipGesture)) { _ in
                 print("flip gesture detected in Guide View")
                 //direction (str): Direction to flip, 'l', 'r', 'f', 'b'.
-                droneManager.pressFlip(direction: "f")
+                droneManager.flip(direction: "f")
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .flyUpwardGesture)) { _ in
+                print("fly downward gesture detected in Guide View")
+                droneManager.flyUpward(distance: 35)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .flyDownwardGesture)) { _ in
+                print("fly downward gesture detected in Guide View")
+                droneManager.flyDownward(distance: 35)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .flyLeftwardGesture)) { _ in
+                print("fly leftward gesture detected in Guide View")
+                droneManager.flyLeftward(distance: 35)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .flyRightwardGesture)) { _ in
+                print("fly leftward gesture detected in Guide View")
+                droneManager.flyRightward(distance: 35)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .stopGesture)) { _ in
+                print("stop gesture detected in Guide View")
+                droneManager.stop()
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .rotateRightwardGesture)) { _ in
+                print("rotate rightward gesture detected in Guide View")
+                droneManager.rotateRightward(degrees: 15)
+            }
+            .onReceive(NotificationCenter.default.publisher(for: .rotateLeftwardGesture)) { _ in
+                print("rotate leftward gesture detected in Guide View")
+                droneManager.rotateLeftward(degrees: 15)
             }
             
             // 手势指令和分数
             VStack(spacing: 20) {
                 Text("Try to use the following hand gestures to control Tello drone")
                     .font(.headline)
-                    .padding(.vertical, 50)
+                    .padding(.vertical, 10)
                     .multilineTextAlignment(.center)
 
-                HStack(spacing: 50) {
-                    GestureCommandView(gesture: NSLocalizedString("Takeoff", comment: "Command to take off"), symbolName: "👌")
-                    GestureCommandView(gesture: NSLocalizedString("Land", comment: "Command to land"), symbolName: "✊")
-                    GestureCommandView(gesture: NSLocalizedString("Move Forward", comment: "Command to move forward"), symbolName: "👆")
-                    GestureCommandView(gesture: NSLocalizedString("Move Backward", comment: "Command to move backward"), symbolName: "✋")
-                    GestureCommandView(gesture: NSLocalizedString("Flip", comment: "Command to flip"), symbolName: "✌️")
-                }
+                //Takeoff:👌, Land:✊, Fly Upward: 👆, Fly Downward: 🤏, Fly Forward: 🤙, Fly Backward: 🤚, Fly Leftward: 👈, Fly Rightward: 👍, Stop: 🫰, Rotate Leftward: 🤘, Rotate Rightward: 🤟, Flip: ✌️
 
-//                HStack {
-//                    ScoreView(label: NSLocalizedString("LeftScore", comment: "Left hand score"), score: model.leftScore)
-//                        .padding(.top, 10)
-//                    ScoreView(label: NSLocalizedString("RightScore", comment: "Right hand score"), score: model.rightScore)
-//                        .padding(.top, 10)
-//                }
+                
+                VStack {
+                    HStack(spacing: 45) {
+                        GestureCommandView(gesture: NSLocalizedString("Takeoff", comment: "Command to take off"), symbolName: "👌")
+                        GestureCommandView(gesture: NSLocalizedString("Land", comment: "Command to land"), symbolName: "✊")
+                        GestureCommandView(gesture: NSLocalizedString("Fly Forward", comment: "Command to fly forward"), symbolName: "🤙")
+                        GestureCommandView(gesture: NSLocalizedString("Fly Backward", comment: "Command to fly backward"), symbolName: "✋")
+                        GestureCommandView(gesture: NSLocalizedString("Fly Upward", comment: "Command to fly upward"), symbolName: "👆")
+                        GestureCommandView(gesture: NSLocalizedString("Fly Downward", comment: "Command to fly downward"), symbolName: "🤏")
+                    }
+                    HStack(spacing: 45) {
+                        GestureCommandView(gesture: NSLocalizedString("Fly Leftward", comment: "Command to fly leftward"), symbolName: "👈")
+                        GestureCommandView(gesture: NSLocalizedString("Fly Rightward", comment: "Command to fly rightward"), symbolName: "👍")
+                        GestureCommandView(gesture: NSLocalizedString("Stop", comment: "Command to stop"), symbolName: "🫰")
+                        GestureCommandView(gesture: NSLocalizedString("Rotate Leftward", comment: "Command to rotate leftward"), symbolName: "🤘")
+                        GestureCommandView(gesture: NSLocalizedString("Rotate Rightward", comment: "Command to rotate rightward"), symbolName: "🤟")
+                        GestureCommandView(gesture: NSLocalizedString("Flip", comment: "Command to flip"), symbolName: "✌️")
+                    }
+                }
+                .padding(.horizontal) // Adjust padding as needed
+                .padding(.vertical, 20)
+
             }
             .padding()
         }        
@@ -159,7 +178,7 @@ struct GestureCommandView: View {
         }
     }
 }
-//
+
 //#Preview {
 //    Guide()
 //        .environment(ViewModel())

@@ -69,6 +69,34 @@ class TelloDrone {
         sendCommand("flip \(direction)", completion: completion)
     }
 
+    func flyUpward(distance: Int, completion: @escaping (String) -> Void) {
+        sendCommand("up \(distance)", completion: completion)
+    }
+
+    func flyDownward(distance: Int, completion: @escaping (String) -> Void) {
+        sendCommand("down \(distance)", completion: completion)
+    }
+
+    func flyLeftward(distance: Int, completion: @escaping (String) -> Void) {
+        sendCommand("left \(distance)", completion: completion)
+    }
+
+    func flyRightward(distance: Int, completion: @escaping (String) -> Void) {
+        sendCommand("right \(distance)", completion: completion)
+    }
+
+    func rotateLeftward(degrees: Int, completion: @escaping (String) -> Void) {
+        sendCommand("ccw \(degrees)", completion: completion)
+    }
+
+    func rotateRightward(degrees: Int, completion: @escaping (String) -> Void) {
+        sendCommand("cw \(degrees)", completion: completion)
+    }
+
+    func stop(completion: @escaping (String) -> Void) {
+        sendCommand("stop", completion: completion)
+    }
+
     private func sendCommand(_ command: String, completion: @escaping (String) -> Void) {
         let data = command.data(using: .utf8)!
         connection.send(content: data, completion: .contentProcessed({ [weak self] error in
