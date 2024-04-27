@@ -1,8 +1,8 @@
 //
-//  SwiftUIView.swift
-//  FingerDance
+//  Guide.swift
+//  SkyGestures
 //
-//  Created by 许同学 on 2024/1/11.
+//  Created by zlinoliver on 2024/4/27.
 //
 
 
@@ -17,7 +17,7 @@ struct Guide: View {
     var body: some View {
         @Bindable var model = model
         VStack {
-            // 标题和副标题
+            // Title and Subtitle
             VStack {
                 Text("SkyGestures")
                     .font(.largeTitle)
@@ -35,7 +35,7 @@ struct Guide: View {
                 .padding(.vertical, 30)
                 .font(.system(size: 16, weight: .bold))
             
-            // 连接状态和按钮
+            // Drone Connection Status and Button
             VStack {
                 Text(droneManager.isConnected ? "Drone Connected" : "Drone Not Connected")
                     .foregroundColor(droneManager.isConnected ? .green : .red)
@@ -104,7 +104,7 @@ struct Guide: View {
                 droneManager.rotateLeftward(degrees: 15)
             }
             
-            // 手势指令和分数
+            // Hand Gesture Commands
             VStack(spacing: 20) {
                 Text("Try to use the following hand gestures to control Tello drone")
                     .font(.headline)
@@ -113,7 +113,6 @@ struct Guide: View {
 
                 //Takeoff:👌, Land:✊, Fly Upward: 👆, Fly Downward: 🤏, Fly Forward: 🤙, Fly Backward: 🤚, Fly Leftward: 👈, Fly Rightward: 👍, Stop: 🫰, Rotate Leftward: 🤘, Rotate Rightward: 🤟, Flip: ✌️
 
-                
                 VStack {
                     HStack(spacing: 45) {
                         GestureCommandView(gesture: NSLocalizedString("Takeoff", comment: "Command to take off"), symbolName: "👌")
@@ -132,7 +131,7 @@ struct Guide: View {
                         GestureCommandView(gesture: NSLocalizedString("Flip", comment: "Command to flip"), symbolName: "✌️")
                     }
                 }
-                .padding(.horizontal) // Adjust padding as needed
+                .padding(.horizontal)
                 .padding(.vertical, 20)
 
             }
@@ -153,17 +152,7 @@ struct Guide: View {
     
 }
 
-// 分数视图
-struct ScoreView: View {
-    let label: String
-    let score: Int
-
-    var body: some View {
-        Text("\(label): \(score)")
-    }
-}
-
-// 手势命令视图
+// Hand Gesture Command View
 struct GestureCommandView: View {
     let gesture: String
     let symbolName: String

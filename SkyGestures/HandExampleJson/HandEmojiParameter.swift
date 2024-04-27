@@ -25,7 +25,6 @@ import HandVector
 //Rotate Rightward: 🤟
 //Flip: ✌️
 
-
 struct HandEmojiParameter: Codable {
     struct JointInfo: Codable {
         let position: simd_float3

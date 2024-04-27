@@ -14,7 +14,6 @@ struct SkyGesturesApp: App {
         WindowGroup {
             Guide()
                 .environment(model)
-//                .environment(\.locale, .init(identifier: "en"))
         }
         .windowStyle(.automatic)
 

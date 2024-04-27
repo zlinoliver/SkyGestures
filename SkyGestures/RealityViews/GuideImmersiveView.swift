@@ -1,8 +1,8 @@
 //
 //  GuideImmersiveView.swift
-//  FingerDance
+//  SkyGestures
 //
-//  Created by 许同学 on 2024/1/8.
+//  Created by zlinoliver on 2024/4/27.
 //
 //
 
@@ -17,23 +17,25 @@ struct GuideImmersiveView: View {
         RealityView { content in
             
             let entity = Entity()
-            entity.name = "GameRoot"
+            entity.name = "SkyGesture"
             model.rootEntity = entity
             content.add(entity)
             
-            // 加载所有手势的参数到字典中
+            // Load all hand gesture parameters into the dictionary.
             model.handEmojiDict = HandEmojiParameter.generateParametersDict(fileName: "HandEmojiTotalJson")!
-            // 初始化一个变量来记录上次指令发送的时间
+            
+            // Initialize a variable to record the time when the last command was sent.
             var lastCommandTime: Date? = nil
 
             subscriptions.append(content.subscribe(to: SceneEvents.Update.self, on: nil, { event in
-                // 检查距离上次发送指令是否已经过去2秒
+                // Check if it has been 2 seconds since the last command was sent.
                 if let lastTime = lastCommandTime, Date().timeIntervalSince(lastTime) < 2 {
                     return
                 }
         
-                //Takeoff:👌, Land:✊, Fly Upward: 👆, Fly Downward: 🤏, Fly Forward: 🤙, Fly Backward: 🤚, Fly Leftward: 👈, Fly Rightward: 👍, Stop: 🫰, Rotate Leftward: 🤘, Rotate Rightward: 🤟, Flip: ✌️
-                // 手势识别并执行相应操作
+                //Hand Gesture Commands: Takeoff:👌, Land:✊, Fly Upward: 👆, Fly Downward: 🤏, Fly Forward: 🤙, Fly Backward: 🤚, Fly Leftward: 👈, Fly Rightward: 👍, Stop: 🫰, Rotate Leftward: 🤘, Rotate Rightward: 🤟, Flip: ✌️
+                
+                // Recognize the gesture and perform the corresponding action.
                 if let okGesture = model.handEmojiDict["👌"]?.convertToHandVectorMatcher(),
                    let pointUpGesture = model.handEmojiDict["👆"]?.convertToHandVectorMatcher(),
                    let fistGesture = model.handEmojiDict["✊"]?.convertToHandVectorMatcher(),
@@ -47,10 +49,10 @@ struct GuideImmersiveView: View {
                    let signOfHornsHandGesture = model.handEmojiDict["🤘"]?.convertToHandVectorMatcher(),
                    let victoryGesture = model.handEmojiDict["✌️"]?.convertToHandVectorMatcher(){
                    
-                    // 检查右手向量
+                    // Check the right hand vector.
                     if let rightHandVector = model.latestHandTracking.rightHandVector {
 
-                        // 计算右手对👌手势的相似度
+                        // Calculate the similarity of the right hand to the "👌" gesture.
                         if let rightOKGesture = okGesture.right {
                             let rightOKScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightOKGesture)
 //                            print("right hand 👌 score: \(rightOKScore)")
@@ -62,7 +64,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对✊手势的相似度
+                        // Calculate the similarity of the right hand to the "✊" gesture.
                         if let rightFistGesture = fistGesture.right {
                             let rightFistScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightFistGesture)
 //                            print("right hand ✊ score: \(rightFistScore)")
@@ -74,7 +76,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对👆手势的相似度
+                        // Calculate the similarity of the right hand to the "👆" gesture.
                         if let rightUpGesture = pointUpGesture.right {
                             let rightUpScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightUpGesture)
 //                            print("right hand 👆 score: \(rightUpScore)")
@@ -86,7 +88,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对✋手势的相似度
+                        // Calculate the similarity of the right hand to the "✋" gesture.
                         if let rightOpenHandGesture = openHandGesture.right {
                             let rightOpenHandScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightOpenHandGesture)
 //                            print("right hand ✋ score: \(rightOpenHandScore)")
@@ -98,7 +100,7 @@ struct GuideImmersiveView: View {
                             }
                         }
                         
-                        // 计算右手对✌️手势的相似度
+                        // Calculate the similarity of the right hand to the "✌️" gesture.
                         if let rightVictoryGesture = victoryGesture.right {
                             let rightVictoryScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightVictoryGesture)
 //                            print("right hand ✌️ score: \(rightVictoryScore)")
@@ -110,7 +112,7 @@ struct GuideImmersiveView: View {
                             }
                         }
                         
-                        // 计算右手对🤏手势的相似度
+                        // Calculate the similarity of the right hand to the "🤏" gesture.
                         if let rightPinchGesture = pinchHandGesture.right {
                             let rightPinchScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightPinchGesture)
 //                            print("right hand 🤏 score: \(rightPinchScore)")
@@ -122,7 +124,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对🤙手势的相似度
+                        // Calculate the similarity of the right hand to the "🤙" gesture.
                         if let rightCallMeGesture = callMeHandGesture.right {
                             let rightCallMeScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightCallMeGesture)
 //                            print("right hand 🤙 score: \(rightCallMeScore)")
@@ -134,7 +136,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对👈手势的相似度
+                        // Calculate the similarity of the right hand to the "👈" gesture.
                         if let rightPointLeftGesture = pointLeftHandGesture.right {
                             let rightPointLeftScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightPointLeftGesture)
 //                            print("right hand 👈 score: \(rightPointLeftScore)")
@@ -146,7 +148,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对👍手势的相似度
+                        // Calculate the similarity of the right hand to the "👍" gesture.
                         if let rightThumbsUpGesture = thumbsUpHandGesture.right {
                             let rightThumbsUpScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightThumbsUpGesture)
 //                            print("right hand 👍 score: \(rightThumbsUpScore)")
@@ -158,7 +160,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对🫰手势的相似度
+                        // Calculate the similarity of the right hand to the "🫰" gesture.
                         if let rightFingerHeartGesture = fingerHeartHandGesture.right {
                             let rightFingerHeartScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightFingerHeartGesture)
 //                            print("right hand 🫰 score: \(rightFingerHeartScore)")
@@ -170,7 +172,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对🤟手势的相似度
+                        // Calculate the similarity of the right hand to the "🤟" gesture.
                         if let rightLoveYouGesture = loveYouHandGesture.right {
                             let rightLoveYouScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightLoveYouGesture)
 //                            print("right hand 🤟 score: \(rightLoveYouScore)")
@@ -182,7 +184,7 @@ struct GuideImmersiveView: View {
                             }
                         }
 
-                        // 计算右手对🤘手势的相似度
+                        // Calculate the similarity of the right hand to the "🤘" gesture.
                         if let rightSignOfHornsGesture = signOfHornsHandGesture.right {
                             let rightSignOfHornsScore = rightHandVector.similarity(of: HandVectorMatcher.allFingers, to: rightSignOfHornsGesture)
 //                            print("right hand 🤘 score: \(rightSignOfHornsScore)")
@@ -224,7 +226,7 @@ struct GuideImmersiveView: View {
 #endif
     }
 }
-//
+
 //#Preview {
 //    GuideImmersiveView()
 //}

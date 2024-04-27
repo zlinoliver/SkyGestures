@@ -5,3 +5,25 @@
   Created by zlinoliver on 2024/4/13.
   
 */
+
+"Start to use Hand Gestures" = "开始使用手势控制";
+"SkyGestures" = "SkyGestures";
+"Control Tello drone using your hand gesture!" = "使用手势控制Tello无人机";
+"Drone Not Connected" = "无人机未连接";
+"Drone Connected" = "无人机已连接";
+"Connect" = "连接";
+"Try to use the following hand gestures to control Tello drone" = "试着做出以下手势，操控Tello无人机";
+"Takeoff" = "起飞";
+"Land" = "降落";
+"Fly Forward" = "前进";
+"Fly Backward" = "后退";
+"Fly Upward" = "上升";
+"Fly Downward" = "下降";
+"Fly Leftward" = "左移";
+"Fly Rightward" = "右移";
+"Rotate Leftward" = "左转";
+"Rotate Rightward" = "右转";
+"Stop" = "停止";
+"Flip" = "翻跟斗";
+"Left" = "左手";
+"Right" = "右手";
