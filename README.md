@@ -49,7 +49,7 @@ To get started with SkyGestures:
 
 ![gesturedemo](Resources/gesture_demo1.gif)
 
-Watch this video for a detailed demonstration of the app:
+Watch this YouTube video for a detailed demonstration of the app:
 
 [![Watch the video](https://img.youtube.com/vi/3iGqvcmfxfI/sddefault.jpg)](https://www.youtube.com/watch?v=3iGqvcmfxfI)
 
@@ -59,6 +59,7 @@ Watch this video for a detailed demonstration of the app:
 - **Virtual 3D Tello drone model** for users without access to a physical drone. (**planned**)
 - **Configuration panel** for customizing flight speed, monitoring battery levels, and more. (**planned**)
 - **Formation flight control** for multiple Tello drones, allowing synchronized maneuvers and operations in a coordinated fleet.
+- More features from your pull requests contributions!
 
 
 ## Contributing
@@ -74,11 +75,11 @@ We welcome contributions from the community! Whether you're looking to implement
 
 ## Acknowledgements
 
-I extend my sincere gratitude to the developers and contributors of the following open-source projects, which have played a pivotal role in the development of **SkyGestures**:
+We extend our sincere gratitude to the developers and contributors of the following open-source projects, which have played a pivotal role in the development of **SkyGestures**:
 
-- **[HandVector](https://github.com/XanderXu/HandVector)** - The hand tracking feature is built upon the robust foundation provided by HandVector. Their pioneering work in gesture recognition has significantly enhanced my application's functionality.
+- **[HandVector](https://github.com/XanderXu/HandVector)** - The hand tracking feature is built upon the robust foundation provided by HandVector. Their pioneering work in gesture recognition has significantly enhanced our application's functionality.
 
-This project stands on the shoulders of these remarkable community contributions, and I am profoundly thankful for their efforts.
+Our project stands on the shoulders of these remarkable community contributions, and we are profoundly thankful for their efforts.
 
 ## License
 
