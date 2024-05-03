@@ -47,7 +47,7 @@ To get started with SkyGestures:
 4. Press **Connect** to establish a connection with the drone.
 5. Enjoy controlling your Tello drone using intuitive hand gestures!
 
-![gesturedemo](Resources/gesture_demo.gif)
+![gesturedemo](Resources/gesture_demo1.gif)
 
 Watch this video for a detailed demonstration of the app:
 
